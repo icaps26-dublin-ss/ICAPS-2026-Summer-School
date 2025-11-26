@@ -157,40 +157,12 @@
     };*/
 
     // Auto-generate the schedule from JSON
-    /*
-      const scheduleData = {
-      "9–10:30am (tutorial)": ["Gabriele Roeger: Classical Planning", 
-                               "TBD: Learning for Planning", 
-                               "Chris Beck: Scheduling", 
-                               "Tom Silver and Naman Shah: Task and Motion Planning"],
-      "10:30–11am (break)": ["", "", "", ""],
-      "11am–12:30pm (tutorial)": ["Gabriele Roeger: Classical Planning", 
-                                  "TBD: Learning for Planning", 
-                                  "Chris Beck: Scheduling", 
-                                  "Tom Silver and Naman Shah: Task and Motion Planning"],
-      "12:30–1:30pm (lunch)": ["", "", "", ""],
-      "1:30–3pm (tutorial)": ["Michael Katz: GenAI in Planning", 
-                              "Florent Teichteil-Königsbuch: Probabilistic Planning", 
-                              "Amy Zhang: Robotics", 
-                              "Matthew Taylor: Reinforcement Learning"],
-      "3–3:30pm (break)": ["", "", "", ""],
-      "3:30–5pm (tutorial)": ["Michael Katz: GenAI in Planning", 
-                              "Florent Teichteil-Königsbuch: Probabilistic Planning", 
-                              "Amy Zhang: Robotics", 
-                              "Matthew Taylor: Reinforcement Learning"],
-      "5–6:30pm (dinner)": ["", "", "", ""],
-      "6:30–8pm (lab)": ["Nir Lipovetsky: PDDL Classical Planning with planning.domains", 
-                         "Ayal Taitler: RDDL Probabilistic Planning with PyRDDLGym", 
-                         "Calarina Musliman: Reinforcement Learning Lab", 
-                         "Tom Silver and Naman Shah: Task and Motion Planning Lab"]
-    };*/
-
     const scheduleData = {
   "9-10:30am (tutorial)": [
-    "Gabriele Roeger: Classical Planning",
-    "TBD: Learning for Planning",
-    "Chris Beck: Scheduling",
-    "Tom Silver and Naman Shah: Task and Motion Planning"
+    "Gabriele Roeger<br><b>Classical Planning</b>",
+    "TBD<br><b>Learning for PlanningM</b>",
+    "Chris Beck<br><b>Scheduling</b>",
+    "Tom Silver and Naman Shah<br><b>Task and Motion Planning</b>"
   ],
   "10:30-11am (break)": ["", "", "", ""],
   "11am-12:30pm (tutorial)": [
@@ -299,13 +271,82 @@ function buildSchedule() {
     <h2>Speakers & Topics</h2>
     <div class="speaker-grid">
       <div class="speaker-card">
-        <h3>Speaker Name (TBD)</h3>
+        <h3><a href="https://ai.dmi.unibas.ch/people/roeger/">Gabriele Roeger</a> (University of Basel)</h3>
         <details>
           <summary>Abstract</summary>
           <p>TBD</p>
         </details>
       </div>
-      <!-- Duplicate speaker-card blocks for all 8 speakers -->
+      <div class="speaker-card">
+        <h3><a href="https://research.ibm.com/people/michael-katz">Michael Katz</a> (IBM Research)</h3>
+        <details>
+          <summary>Abstract</summary>
+          <p>TBD</p>
+        </details>
+      </div>
+      <div class="speaker-card">
+        <h3><a href="https://nirlipo.github.io/">Nir Lipovetsky</a> (University of Melbourne)</h3>
+        <details>
+          <summary>Abstract</summary>
+          <p>TBD</p>
+        </details>
+      </div>
+      <div class="speaker-card">
+        <h3><a href="https://www.linkedin.com/in/florent-teichteil-koenigsbuch-a198453b/?originalSubdomain=fr">Florent Teichteil-Königsbuch</a> (Airbus)</h3>
+        <details>
+          <summary>Abstract</summary>
+          <p>TBD</p>
+        </details>
+      </div>
+      <div class="speaker-card">
+        <h3><a href="https://cris.bgu.ac.il/en/persons/ayal-taitler/">Ayal Taitler</a> (Ben-Gurion University of the Negev)</h3>
+        <details>
+          <summary>Abstract</summary>
+          <p>TBD</p>
+        </details>
+      </div>
+      <div class="speaker-card">
+        <h3><a href="https://tidel.mie.utoronto.ca/people.php">Chris Beck</a> (University of Toronto)</h3>
+        <details>
+          <summary>Abstract</summary>
+          <p>TBD</p>
+        </details>
+      </div>
+      <div class="speaker-card">
+        <h3><a href="https://drmatttaylor.net/">Matthew Taylor</a> (University of Alberta)</h3>
+        <details>
+          <summary>Abstract</summary>
+          <p>TBD</p>
+        </details>
+      </div>
+      <div class="speaker-card">
+        <h3><a href="https://cmuslima.github.io/">Calarina Musliman</a> (University of Alberta)</h3>
+        <details>
+          <summary>Abstract</summary>
+          <p>TBD</p>
+        </details>
+      </div>
+      <div class="speaker-card">
+        <h3><a href="https://tomsilver.github.io/">Tom Silver</a> (Princeton University)</h3>
+        <details>
+          <summary>Abstract</summary>
+          <p>TBD</p>
+        </details>
+      </div>
+      <div class="speaker-card">
+        <h3><a href="https://www.namanshah.net/">Naman Shah</a> (Brown University, Ai2)</h3>
+        <details>
+          <summary>Abstract</summary>
+          <p>TBD</p>
+        </details>
+      </div>
+      <div class="speaker-card">
+        <h3><a href="https://www.ece.utexas.edu/people/faculty/amy-zhang">Amy Zhang</a> (UT Austin)</h3>
+        <details>
+          <summary>Abstract</summary>
+          <p>TBD</p>
+        </details>
+      </div>
     </div>
   </section>
 
@@ -317,7 +358,7 @@ function buildSchedule() {
         <!--<p>Bio TBD</p>-->
       </div>
       <div class="organizer-card">
-        <h3><a href="https://d3m.mie.utoronto.ca/">Scott Sanner</a> (University of Toronto)</h3>
+        <h3><a href="https://d3m.mie.utoronto.ca/members/ssanner/">Scott Sanner</a> (University of Toronto)</h3>
         <!--<p>Bio TBD</p>-->
       </div>
     </div>
