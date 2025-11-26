@@ -144,7 +144,7 @@
 
   </style>
   <script>
-    <!--
+    /*
     // Dark mode toggle
     function toggleDarkMode() {
       document.body.classList.toggle('dark');
@@ -154,10 +154,10 @@
       if (localStorage.getItem('darkMode') === 'true') {
         document.body.classList.add('dark');
       }
-    };-->
+    };*/
 
     // Auto-generate the schedule from JSON
-    <!--
+    /*
       const scheduleData = {
       "9–10:30am (tutorial)": ["Gabriele Roeger: Classical Planning", 
                                "TBD: Learning for Planning", 
@@ -183,7 +183,7 @@
                          "Ayal Taitler: RDDL Probabilistic Planning with PyRDDLGym", 
                          "Calarina Musliman: Reinforcement Learning Lab", 
                          "Tom Silver and Naman Shah: Task and Motion Planning Lab"]
-    };-->
+    };*/
 
     const scheduleData = {
   "9-10:30am (tutorial)": [
@@ -222,7 +222,7 @@
   ]
 };
 
-<!--    function buildSchedule() {
+function buildSchedule() {
       const tbody = document.querySelector('#schedule-table');
       tbody.innerHTML = '';
 
@@ -239,55 +239,7 @@
         row.innerHTML = `<td>${time}</td>` + events.map(e => `<td>${e}</td>`).join('');
         tbody.appendChild(row);
       });
-    }-->
-
-  function buildSchedule() {
-  const container = document.getElementById("schedule-table");
-  container.innerHTML = "";
-
-  const table = document.createElement("table");
-  table.setAttribute("role", "grid");  // Important for Pico.css
-
-  // Header
-  const thead = document.createElement("thead");
-  const headerRow = document.createElement("tr");
-
-  const emptyTh = document.createElement("th");
-  emptyTh.setAttribute("scope", "col");
-  headerRow.appendChild(emptyTh);
-
-  days.forEach(day => {
-    const th = document.createElement("th");
-    th.setAttribute("scope", "col");
-    th.textContent = day;
-    headerRow.appendChild(th);
-  });
-
-  thead.appendChild(headerRow);
-  table.appendChild(thead);
-
-  // Body
-  const tbody = document.createElement("tbody");
-
-  Object.entries(scheduleData).forEach(([time, sessions]) => {
-    const tr = document.createElement("tr");
-
-    const th = document.createElement("th");
-    th.setAttribute("scope", "row");
-    th.textContent = time;
-    tr.appendChild(th);
-
-    sessions.forEach(session => {
-      const td = document.createElement("td");
-      td.textContent = session;
-      tr.appendChild(td);
-    });
-
-    tbody.appendChild(tr);
-  });
-
-  table.appendChild(tbody);
-  container.appendChild(table);
+    }
 }
 
 
