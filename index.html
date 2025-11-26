@@ -239,9 +239,7 @@ function buildSchedule() {
         row.innerHTML = `<td>${time}</td>` + events.map(e => `<td>${e}</td>`).join('');
         tbody.appendChild(row);
       });
-    }
 }
-
 
     document.addEventListener('DOMContentLoaded', buildSchedule);
   </script>
