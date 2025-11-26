@@ -5,23 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Academic Workshop</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0 2rem; line-height: 1.6; }
-    h1, h2 { color: #333; }
-    section { margin-bottom: 2.5rem; }
-    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: center; }
-    th { background-color: #f2f2f2; }
-    .slot-tutorial { background-color: #ffe5cc; }
-    .slot-lab { background-color: #fff8b3; }
-    .slot-break { background-color: #efefef; }
-    .slot-lunch { background-color: #efefef; }
-    .slot-dinner { background-color: #efefef; }
+    :root {
+      --ucd-blue: #003b73;
+      --ucd-gold: #f6b221;
+      --light-grey: #f2f2f2;
+      --orange: #ffe5cc;
+      --yellow: #fff8b3;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: var(--ucd-blue);
+      padding: 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #022b54;
+      padding: 0.7rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem;
+      margin: 0 auto;
+      max-width: 900px;
+    }
+
+    h2 {
+      border-left: 5px solid var(--ucd-blue);
+      padding-left: 0.5rem;
+    }
+
+    /* Schedule Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    th {
+      background-color: var(--light-grey);
+    }
+    .slot-tutorial {
+      background-color: var(--orange);
+    }
+    .slot-lab {
+      background-color: var(--yellow);
+    }
+    .slot-break, .slot-lunch, .slot-dinner {
+      background-color: var(--light-grey);
+    }
+
+    /* Speaker cards */
+    .speaker-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .speaker-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      background: #fff;
+    }
+
+    .speaker-card h3 {
+      margin-top: 0;
+    }
+
+    details {
+      margin-top: 0.5rem;
+      cursor: pointer;
+    }
+
+    /* Organizer cards */
+    .organizer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      padding: 1rem;
+      background: var(--ucd-blue);
+      color: white;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Academic Workshop</h1>
+    <p>University College Dublin • June 22–25</p>
   </header>
+
+  <nav>
+    <a href="#dates-location">Dates & Location</a>
+    <a href="#registration">Registration</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#speakers">Speakers</a>
+    <a href="#organizers">Organizers</a>
+  </nav>
 
   <section id="dates-location">
     <h2>Dates & Location</h2>
@@ -35,6 +149,7 @@
 
   <section id="schedule">
     <h2>Schedule</h2>
+
     <table>
       <thead>
         <tr>
@@ -88,12 +203,35 @@
 
   <section id="speakers">
     <h2>Speakers & Topics</h2>
-    <p>8 speakers and topic abstracts TBD</p>
+    <div class="speaker-grid">
+      <div class="speaker-card">
+        <h3>Speaker Name (TBD)</h3>
+        <details>
+          <summary>Abstract</summary>
+          <p>TBD</p>
+        </details>
+      </div>
+      <!-- Duplicate speaker-card blocks for all 8 speakers -->
+    </div>
   </section>
 
   <section id="organizers">
     <h2>Organizers</h2>
-    <p>Organizers and bios TBD</p>
+    <div class="organizer-grid">
+      <div class="organizer-card">
+        <h3>Organizer Name (TBD)</h3>
+        <p>Bio TBD</p>
+      </div>
+      <div class="organizer-card">
+        <h3>Organizer Name (TBD)</h3>
+        <p>Bio TBD</p>
+      </div>
+    </div>
   </section>
+
+  <footer>
+    <p>© 2025 Academic Workshop</p>
+  </footer>
+
 </body>
 </html>
