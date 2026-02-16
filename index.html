@@ -174,14 +174,14 @@
   ],
   "12:30-1:30pm (lunch)": ["", "", "", ""],
   "1:30-3pm (tutorial)": [
-    "Michael Katz<br><b>GenAI in Planning</b>",
+    "Michael Katz and Augusto B. Corrêa<br><b>GenAI in Planning</b>",
     "Florent Teichteil-Königsbuch<br><b>Probabilistic Planning</b>",
     "Matthew Taylor<br><b>Reinforcement Learning</b>",
     "Amy Zhang<br><b>Planning and Learning in Robotics</b>"
   ],
   "3-3:30pm (break)": ["", "", "", ""],
   "3:30-5pm (tutorial)": [
-    "Michael Katz<br><b>GenAI in Planning</b>",
+    "Michael Katz and Augusto B. Corrêa<br><b>GenAI in Planning</b>",
     "Florent Teichteil-Königsbuch<br><b>Probabilistic Planning</b>",
     "Matthew Taylor<br><b>Reinforcement Learning</b>",
     "Amy Zhang<br><b>Planning and Learning in Robotics</b>"
@@ -250,7 +250,7 @@ function buildSchedule() {
         <ul><li>Registration for all sessions</li>
           <li>Board (Breakfast, Lunch, Coffee Breaks)</li>
         </ul></li>
-      <li><b>Registration URL</b>: Expected to go live on Feb 20, 2026 (please check back)</li>
+      <li><b>Registration URL</b>: Will go live on Feb 20, 2026 (please check back)</li>
       <li><b>Refund Policy</b>: 
         <ul><li>Refund permitted on or before Apr 21, 2026 (minus €100 processing fee and applicable banking fees)</li>
         <li>No refund after Apr 21, 2026</li>
@@ -290,7 +290,16 @@ function buildSchedule() {
         <h3><a href="https://research.ibm.com/people/michael-katz">Michael Katz</a><br>(IBM Research)</h3>
         <details>
           <summary>Tutorial on GenAI in Planning</summary>
-          <p>TBD</p>
+          <p>For over six decades, automated planning has been central to AI, enabling systems to reason about actions and achieve goals in complex, dynamic environments. As large language models (LLMs) redefine what AI systems can do, planning ideas are becoming newly relevant: they offer principled ways to specify objectives and constraints, evaluate behavior, and move from fluent language to reliable, goal-directed decision making. <br /> <br /> 
+This lecture focuses on methods for planning with language models. The first part covers plan generation with LLMs, treating the model as a planner. We will cover both post-training and inference. The second part explores hybrid approaches that combine LLMs with symbolic planning components at build time, inference time, or both, to improve correctness, scalability, and robustness.</p>
+        </details>
+      </div>
+      <div class="speaker-card">
+        <h3><a href="https://abcorrea.github.io/">Augusto B. Corrêa</a><br>(Oxford)</h3>
+        <details>
+          <summary>Tutorial on GenAI in Planning</summary>
+          <p>For over six decades, automated planning has been central to AI, enabling systems to reason about actions and achieve goals in complex, dynamic environments. As large language models (LLMs) redefine what AI systems can do, planning ideas are becoming newly relevant: they offer principled ways to specify objectives and constraints, evaluate behavior, and move from fluent language to reliable, goal-directed decision making. <br /> <br /> 
+This lecture focuses on methods for planning with language models. The first part covers plan generation with LLMs, treating the model as a planner. We will cover both post-training and inference. The second part explores hybrid approaches that combine LLMs with symbolic planning components at build time, inference time, or both, to improve correctness, scalability, and robustness.</p>
         </details>
       </div>
       <div class="speaker-card">
@@ -318,7 +327,14 @@ function buildSchedule() {
         <h3><a href="https://cris.bgu.ac.il/en/persons/ayal-taitler/">Ayal Taitler</a><br>(Ben-Gurion University of the Negev)</h3>
         <details>
           <summary>Lab on RDDL Probabilistic Planning with PyRDDLGym</summary>
-          <p>TBD</p>
+          <p>Many decision problems come with rich, structured knowledge of dynamics and rewards -- so why discard that structure and go model-free? This lab makes the case for model-based probabilistic planning and walks through the full pipeline: formal modeling, an interactive environment, and a differentiable solver.
+We’ll start with a concise, pragmatic refresher on MDPs and stochastic planning, positioning RDDL relative to PPDDL and highlighting support for concurrency, numeric/Boolean fluents, conditional effects, and exogenous processes. We then introduce pyRDDLGym, which compiles RDDL descriptions into OpenAI Gym–compatible environments for fast simulation, visualization, and benchmarking. <br /> <br />
+The centerpiece is a hands-on Colab session where participants will: <br />
+(i) model a stochastic control task in RDDL; <br />
+(ii) generate and explore a pyRDDLGym environment; and <br />
+(iii) experiment with the default random agent and a planning-by-backpropagation solver—optimizing a parameterized policy by differentiating through model rollouts, bridging planning and learning. <br />
+By the end, participants will be able to model and solve stochastic planning problems using RDDL and pyRDDLGym, and gain understanding when explicit models can outperform black-box methods.
+</p>
         </details>
       </div>
       <div class="speaker-card">
@@ -390,7 +406,15 @@ In reinforcement learning (RL) a physical or virtual agent needs to learn about 
         <h3><a href="https://d3m.mie.utoronto.ca/members/ssanner/">Scott Sanner</a><br>(University of Toronto)</h3>
         <!--<p>Bio TBD</p>-->
       </div>
+      <div class="speaker-card">
+        <h3><a href="https://people.ucd.ie/rem.collier">Rem Collier</a><br>(University College Dublin)</h3>
+        <!--<p>Bio TBD</p>-->
+      </div>
     </div>
+    <p>
+    <ul>
+      <li><b>ICAPS 2026 Summer School Contact:</b> <i>icaps-2026-summer-school</i> [at] <i>googlegroups.com</i></li>
+    </ul>
   </section>
 
   <footer>
