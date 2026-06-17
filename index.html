@@ -169,7 +169,7 @@
   "10:30-11am (break)": ["", "", "", ""],
   "11am-12:30pm (tutorial)": [
     "Gabriele Roeger<br><b>Classical Planning</b>",
-    "Blai Bonet<br><b>Learning for Planning</b>",
+    "Blai Bonet<br><b>Learning for Generalized Planning</b>",
     "Chris Beck<br><b>Scheduling</b>",
     "Tom Silver and Naman Shah<br><b>Task and Motion Planning</b>"
   ],
@@ -307,7 +307,17 @@ function buildSchedule() {
         <h3><a href="https://ai.dmi.unibas.ch/people/roeger/">Gabriele Roeger</a><br>(University of Basel)</h3>
         <details>
           <summary>Tutorial on Classical Planning</summary>
-          <p>TBD</p>
+          <p>Classical planning studies how an intelligent agent can automatically compute
+a sequence of actions that achieves a desired goal. Despite its simplifying
+assumptions of deterministic actions and full observability, classical planning
+lies at the core of automated planning research and has provided many of the
+concepts and algorithms that continue to shape research across automated
+planning and decision making. In this tutorial, I will introduce the main
+approaches to solving classical planning problems, including explicit
+state-space search, symbolic search, and SAT-based planning. I will then focus
+on heuristic search, the dominant paradigm in domain-independent planning, and
+present some of its most influential ideas, such as delete-relaxation and
+abstraction-based heuristics.</p>
         </details>
       </div>
       <div class="speaker-card">
@@ -338,15 +348,27 @@ Participants will become familiar with state-of-the-art planners deployed throug
       <div class="speaker-card">
         <h3><a href="https://bonetblai.github.io/">Blai Bonet</a><br>(Universidad Simón Bolívar, Universitat Pompeu Fabra)</h3>
         <details>
-          <summary>Tutorial on Learning for Planning</summary>
-          <p>TBD</p>
+          <summary>Tutorial on Learning for Generalized Planning</summary>
+          <p>Generalized planning is about solving entire collections of
+planning problems over a common domain. That is, computing a
+general policy that solves every instance in the collection.
+For this, abstractions for states, transitions and even
+paths must be computed and aligned in sound and effective
+ways.  <br /> <br />
+In this lecture, we focus on learning approach for generalized
+planning. In the first part, we focus on the task of learning
+policies from training sets composed of small instances, in
+the symbolic and neural settings. In the second part, we focus
+on the task of learning the planning models required in
+generalized planning under different set of assumptions.</p>
         </details>
       </div>
       <div class="speaker-card">
         <h3><a href="https://www.linkedin.com/in/florent-teichteil-koenigsbuch-a198453b/?originalSubdomain=fr">Florent Teichteil-Königsbuch</a><br>(Airbus)</h3>
         <details>
           <summary>Tutorial on Probabilistic Planning</summary>
-          <p>TBD</p>
+          <p>This course provides a comprehensive introduction to probabilistic planning -- the art of making optimal sequential decisions when actions have uncertain outcomes. Starting from the familiar ground of classical AI planning, we build up the mathematical foundations of Markov Decision Processes (MDPs) and Stochastic Shortest Path (SSP) problems. We then explore various algorithms ranging from dynamic programming (Value Iteration, Policy Iteration) through heuristic search (LAO*, LRTDP) to Monte Carlo simulation methods (UCT, POMCP, GoalHSVI). We also venture beyond classical SSPs to address real-world challenges such as non-avoidable dead-end states, safety constraints expressed in temporal logic (PCTL), and the modeling languages -- PPDDL and RDDL -- that have driven two decades of progress through the International Probabilistic Planning Competition. The course closes with simulator-based planning using the scikit-decide framework and an application to probabilistic flight planning under wind uncertainty.<br /> <br />
+             Theory and practice are tightly interleaved throughout the 3-hour session. We illustrate each algorithmic concept with worked examples on small MDPs, then bring it to life through demonstrations of running solvers on a stochastic maze directly from the slides, observing in real time how different algorithms explore the state space and react to uncertainty. These live visualizations make abstract notions like Bellman backups, greedy envelopes, and Monte Carlo rollouts tangible. Furthermore, the progression from foundational models to competition benchmarks and industrial applications gives attendees both the theoretical grounding and the practical intuition needed to apply probabilistic planning to their own research problems.</p>
         </details>
       </div>
       <div class="speaker-card">
@@ -380,19 +402,23 @@ By the end, participants will be able to model and solve stochastic planning pro
         <details>
           <summary>Tutorial on Reinforcement Learning</summary>
           <p> 
-You’re a new robot, just coming online. How do you move your body? What’s surrounding you? What are you supposed to do? Come to this session to find out! <br /> <br />
-In reinforcement learning (RL) a physical or virtual agent needs to learn about its surroundings while also figuring out how to maximize a reward. These sessions will help you understand <br /> 
-1) how to identify when RL could be the right framing for a problem, <br />
-2) what makes an RL problem more or less difficult to solve, <br />
-3) how a handful of simple RL algorithms work, and <br />
-4) where to go if you’d like to learn more.  </p>
+You’re a new robot, just coming online. How do you move your body? What’s surrounding you? What are you supposed to do? Come to this session to find out!<br /> <br />
+In reinforcement learning (RL) a physical or virtual agent needs to learn about its surroundings while also figuring out how to maximize a reward. These sessions will help you understand<br /> 
+1) how to identify when RL could be the right framing for a problem,<br />
+2) what makes an RL problem more or less difficult to solve,<br />
+3) how a handful of simple RL algorithms work, and<br />
+4) where to go if you’d like to learn more.</p>
         </details>
       </div>
       <div class="speaker-card">
         <h3><a href="https://cmuslima.github.io/">Calarina Musliman</a><br>(University of Alberta)</h3>
         <details>
           <summary>Lab on Reinforcement Learning</summary>
-          <p>TBD</p>
+          <p>In this lab, we explore the implementation and performance of both tabular and Deep Reinforcement Learning (RL) algorithms.<br /> <br />
+First, we implement two foundational tabular RL algorithms, Q-learning and SARSA, within a grid world environment to analyze how off-policy and on-policy methods converge on different optimal policies. We then conduct an hyperparameter tuning exercise to evaluate how key variables, such as the learning rate and exploration rate, influence agent performance.<br /> <br />
+Finally, we transition to the Deep RL setting by implementing aspects of the Deep Q-Network (DQN) algorithm, where we similarly investigate the impact of hyperparameter choices on convergence.<br /> <br />
+            <a href="https://colab.research.google.com/drive/16rO5PCocVA0W6fE3TQ0hFvPB_c3iS9Lp">Colab Notebook</a>
+          </p>
         </details>
       </div>
       <div class="speaker-card">
