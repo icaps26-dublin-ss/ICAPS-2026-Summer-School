@@ -386,7 +386,12 @@ generalized planning under different set of assumptions.</p>
         <details>
           <summary>Tutorial on Probabilistic Planning</summary>
           <p>This course provides a comprehensive introduction to probabilistic planning -- the art of making optimal sequential decisions when actions have uncertain outcomes. Starting from the familiar ground of classical AI planning, we build up the mathematical foundations of Markov Decision Processes (MDPs) and Stochastic Shortest Path (SSP) problems. We then explore various algorithms ranging from dynamic programming (Value Iteration, Policy Iteration) through heuristic search (LAO*, LRTDP) to Monte Carlo simulation methods (UCT, POMCP, GoalHSVI). We also venture beyond classical SSPs to address real-world challenges such as non-avoidable dead-end states, safety constraints expressed in temporal logic (PCTL), and the modeling languages -- PPDDL and RDDL -- that have driven two decades of progress through the International Probabilistic Planning Competition. The course closes with simulator-based planning using the scikit-decide framework and an application to probabilistic flight planning under wind uncertainty.<br /> <br />
-             Theory and practice are tightly interleaved throughout the 3-hour session. We illustrate each algorithmic concept with worked examples on small MDPs, then bring it to life through demonstrations of running solvers on a stochastic maze directly from the slides, observing in real time how different algorithms explore the state space and react to uncertainty. These live visualizations make abstract notions like Bellman backups, greedy envelopes, and Monte Carlo rollouts tangible. Furthermore, the progression from foundational models to competition benchmarks and industrial applications gives attendees both the theoretical grounding and the practical intuition needed to apply probabilistic planning to their own research problems.</p>
+             Theory and practice are tightly interleaved throughout the 3-hour session. We illustrate each algorithmic concept with worked examples on small MDPs, then bring it to life through demonstrations of running solvers on a stochastic maze directly from the slides, observing in real time how different algorithms explore the state space and react to uncertainty. These live visualizations make abstract notions like Bellman backups, greedy envelopes, and Monte Carlo rollouts tangible. Furthermore, the progression from foundational models to competition benchmarks and industrial applications gives attendees both the theoretical grounding and the practical intuition needed to apply probabilistic planning to their own research problems.
+            <br /> <br />
+            Slides: 
+            <a href="https://icaps26-dublin-ss.github.io/ICAPS-2026-Summer-School/slides/probabilistic_planning_mdps_part1.pdf">(part 1)</a> 
+            <a href="https://icaps26-dublin-ss.github.io/ICAPS-2026-Summer-School/slides/probabilistic_planning_mdps_part2.pdf">(part 2)</a>
+        </p>
         </details>
       </div>
       <div class="speaker-card">
@@ -399,10 +404,12 @@ The centerpiece is a hands-on Colab session where participants will: <br />
 (i) model a stochastic control task in RDDL; <br />
 (ii) generate and explore a pyRDDLGym environment; and <br />
 (iii) experiment with the default random agent and a planning-by-backpropagation solver—optimizing a parameterized policy by differentiating through model rollouts, bridging planning and learning. <br /> <br />
-By the end, participants will be able to model and solve stochastic planning problems using RDDL and pyRDDLGym, and gain understanding when explicit models can outperform black-box methods. <br /> <br />
-<a href="https://colab.research.google.com/github/ataitler/LabNTutorials/blob/main/ICAPS_summer_school_2026/pyrddlygm_and_jax_lab.ipynb
-">Colab Notebook</a>
-</p>
+By the end, participants will be able to model and solve stochastic planning problems using RDDL and pyRDDLGym, and gain understanding when explicit models can outperform black-box methods. 
+<br /> <br />
+<a href="https://icaps26-dublin-ss.github.io/ICAPS-2026-Summer-School/slides/rddl_lab.pdf">Slides</a> 
+<br /> <br />            
+<a href="https://colab.research.google.com/github/ataitler/LabNTutorials/blob/main/ICAPS_summer_school_2026/pyrddlygm_and_jax_lab.ipynb">Colab Notebook</a>
+        </p>
         </details>
       </div>
       <div class="speaker-card">
@@ -414,7 +421,10 @@ By the end, participants will be able to model and solve stochastic planning pro
           actions to perform. Scheduling is widely studied in Operations Research (OR), theoretical computer science, computer systems, and queueing theory, as well as 
           in AI, leading to a very large variety of problems and solution approaches. In this tutorial, I will provide a brief overview of this scope and then focus on 
           exact techniques for problems studied in OR and AI: mixed-integer linear programming, constraint programming, and recent work on using heuristic search to 
-          solve scheduling problems within the domain-independent dynamic programming framework. </p>
+          solve scheduling problems within the domain-independent dynamic programming framework. 
+          <br /> <br />
+            <a href="https://icaps26-dublin-ss.github.io/ICAPS-2026-Summer-School/slides/scheduling.pdf">Slides</a> 
+          </p>
         </details>
       </div>
       <div class="speaker-card">
@@ -445,7 +455,10 @@ Finally, we transition to the Deep RL setting by implementing aspects of the Dee
         <h3><a href="https://tomsilver.github.io/">Tom Silver</a><br>(Princeton University)</h3>
         <details>
           <summary>Tutorial and Lab on Task and Motion Planning</summary>
-          <p>Automated planning is especially challenging when state and action spaces are continuous, time horizons are long, environments are constrained, and feedback is sparse---all of which are common in robotics. Task and motion planning (TAMP) addresses these challenges by enabling the agent to reason jointly about “what to do” (task planning) and “how to do it” (motion planning). These two levels of reasoning are often entangled due to the lossy nature of the task-planning abstractions that translate the continuous robot environments into discrete representations. In this tutorial and lab, we will approach these challenges with a first-principles introduction to TAMP. Participants should come away with new intuitions and practical tools---an understanding of both “what to do” and “how to do it” when decision-making calls for TAMP.<br /> <br />
+          <p>Automated planning is especially challenging when state and action spaces are continuous, time horizons are long, environments are constrained, and feedback is sparse---all of which are common in robotics. Task and motion planning (TAMP) addresses these challenges by enabling the agent to reason jointly about “what to do” (task planning) and “how to do it” (motion planning). These two levels of reasoning are often entangled due to the lossy nature of the task-planning abstractions that translate the continuous robot environments into discrete representations. In this tutorial and lab, we will approach these challenges with a first-principles introduction to TAMP. Participants should come away with new intuitions and practical tools---an understanding of both “what to do” and “how to do it” when decision-making calls for TAMP.
+          <br /> <br />
+          <a href="https://icaps26-dublin-ss.github.io/ICAPS-2026-Summer-School/slides/learning_tamp_naman.pdf">Slides (Naman)</a> 
+            <br /> <br />
             <a href="https://colab.research.google.com/github/tomsilver/kinder-planning-lab-student/blob/main/kinder_planning_lab.ipynb">Colab Notebook</a>
           </p>
         </details>
@@ -454,7 +467,10 @@ Finally, we transition to the Deep RL setting by implementing aspects of the Dee
         <h3><a href="https://www.namanshah.net/">Naman Shah</a><br>(Brown University, Ai2)</h3>
         <details>
           <summary>Tutorial and Lab on Task and Motion Planning</summary>
-          <p>Automated planning is especially challenging when state and action spaces are continuous, time horizons are long, environments are constrained, and feedback is sparse---all of which are common in robotics. Task and motion planning (TAMP) addresses these challenges by enabling the agent to reason jointly about “what to do” (task planning) and “how to do it” (motion planning). These two levels of reasoning are often entangled due to the lossy nature of the task-planning abstractions that translate the continuous robot environments into discrete representations. In this tutorial and lab, we will approach these challenges with a first-principles introduction to TAMP. Participants should come away with new intuitions and practical tools---an understanding of both “what to do” and “how to do it” when decision-making calls for TAMP.<br /> <br />
+          <p>Automated planning is especially challenging when state and action spaces are continuous, time horizons are long, environments are constrained, and feedback is sparse---all of which are common in robotics. Task and motion planning (TAMP) addresses these challenges by enabling the agent to reason jointly about “what to do” (task planning) and “how to do it” (motion planning). These two levels of reasoning are often entangled due to the lossy nature of the task-planning abstractions that translate the continuous robot environments into discrete representations. In this tutorial and lab, we will approach these challenges with a first-principles introduction to TAMP. Participants should come away with new intuitions and practical tools---an understanding of both “what to do” and “how to do it” when decision-making calls for TAMP.
+          <br /> <br />
+          <a href="https://icaps26-dublin-ss.github.io/ICAPS-2026-Summer-School/slides/learning_tamp_naman.pdf">Slides (Naman)</a> 
+            <br /> <br />
             <a href="https://colab.research.google.com/github/tomsilver/kinder-planning-lab-student/blob/main/kinder_planning_lab.ipynb">Colab Notebook</a>
           </p>
         </details>
